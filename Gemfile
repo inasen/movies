@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.4'
+ruby '2.1.5'
 gem 'rails', '4.1.7'
 
 #
@@ -22,6 +22,9 @@ gem 'devise'
 
 gem 'redis', '~> 3.0.1'
 gem 'hiredis', '~> 0.4.5'
+gem 'braintree', '~> 2.33.1'
+gem 'figaro'
+gem 'gon', '~> 5.1.2'
 
 
 gem 'sdoc', '~> 0.4.0',          group: :doc

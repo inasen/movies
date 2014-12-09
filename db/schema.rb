@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141208224512) do
+ActiveRecord::Schema.define(version: 20141209163530) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,13 @@ ActiveRecord::Schema.define(version: 20141208224512) do
     t.text     "description"
     t.string   "imdb_id"
     t.string   "poster_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "purchases", force: true do |t|
+    t.integer  "movie_id"
+    t.integer  "buyer_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
